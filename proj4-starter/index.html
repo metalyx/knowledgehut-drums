@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sorting List</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-  </head>
-  <body class="">
-    <div class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sorting List</title>
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+  <body class="bg-dark container ">
+    <div class="bg-warning rounded p-3 w-100 d-flex justify-content-center align-items-center flex-column">
       <h1 class="">Sorting List</h1>
-      <ul class="list-group">
-        <!-- <li class="list-group-item">
-          Javascript course<span class="float-right">$2.1</span>
-        </li> -->
+      <ul id="list" class="list-group w-100 m-3">
       </ul>
+      <div>
+        <button
+        type="button"
+        class="button btn-lg btn btn-primary"
+        id="addCourse"
+        >
+        Add random course
+      </button>
       <button
         type="button"
-        class=""
+        class="button btn-lg btn btn-success"
+        id="sort"
       >
         Sort courses
       </button>
-    
+      </div>
     </div>
-
-      <footer>
-        www 🎲 knowledgehut 🎲 .com
-      </footer>
-
-    <script src="./script.js"></script>
-
+    <script src="script.js"></script>
   </body>
 </html>
