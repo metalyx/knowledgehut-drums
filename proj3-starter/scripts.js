@@ -7,11 +7,12 @@ for (let i = 0; i < buttons.length; i++) {
         const buttonColor = e.target.classList[1];
 
         // Set the backround color of the center div
-        center.style = 'background-color: ' + buttonColor;
+        center.classList.add(buttonColor);
     });
 
     buttons[i].addEventListener('mouseout', (e) => {
         // Set the backround color of the center div
-        center.style = '';
+        const buttonColor = e.target.classList[1];
+        center.classList.remove(buttonColor);
     });
 }
