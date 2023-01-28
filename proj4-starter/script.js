@@ -43,6 +43,14 @@ let ascending = true;
 sortButton.addEventListener('click', () => {
     sortCoursesByPrice(courses);
     addCourses(courses, list);
+});
+
+// Generating new course with random values
+// Pushing to courses array
+// Re-render our list with new courses
+addCourseButton.addEventListener('click', () => {
+    courses.push(generateRandomCourse());
+    addCourses(courses, list);
 })
 
 // Clears the target HTML Element and insert HTML Elements from array
@@ -118,5 +126,14 @@ function sortCoursesByPrice (courses) {
         // Descending order
         courses.sort((a, b) => a.price < b.price ? 1 : -1);
         ascending = true;
+    }
+}
+
+// *not a part of homework
+// Generates a course with random values
+function generateRandomCourse () {
+    return {
+        name: `Course #${Math.floor(Math.random() * 10000)}`,
+        price: (Math.random() * 10).toFixed(2)
     }
 }
