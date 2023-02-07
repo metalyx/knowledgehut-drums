@@ -4,20 +4,66 @@
     <meta charset="UTF-8" />
     <title>Playing With Dom</title>
     <link rel="icon" href="lco.png" sizes="16x16" type="image/png" />
-    <!-- attach external bootstrap file -->
-
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
-    <!-- create container to hold all cards, give a class of "gameContainer" -->
-    <!-- create container for each individual card, with the class of "card" -->
-    <!-- each card container should have two child img elements -->
-    <!-- each img element should have a class of "front" or "back" -->
- <!-- attach external script -->
-
-    <footer>
-      www 🎲 knowledgehut 🎲 .com
-    </footer>
+    <div class="gameContainer" id='cardsContainer'>
+        <div class="card">
+            <img class="front" alt="front" src="angryface.png">
+            <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="coke.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="coolface.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="evilface.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="angryface.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="feverface.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="evilface.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="freezeface.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="feverface.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="coolface.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="freezeface.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+        <div class="card">
+            <img class="front" alt="front" src="coke.png">
+             <img class="back" alt="back" src="lco.png">
+        </div>
+    </div>
+    <div class="buttonsContainer">
+        <button class="btn btn-success btn-lg" id="shuffle">Shuffle</button>
+    </div>
+   <script src="index.js"></script>
   </body>
 </html>
